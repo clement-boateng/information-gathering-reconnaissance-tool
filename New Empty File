@@ -1,0 +1,18 @@
+run the recon script: 
+sudo venv/bin/python3 recon.py
+
+run individual module:
+venv/bin/python3 modules/<filename>.py
+
+
+test sites:
+demo.testfire.net
+testphp.vulnweb.com
+scanme.nmap.org
+example.com
+example.net
+example.org
+
+if __name__ == "__main__":
+    result = run("example.com")
+    print(result)
