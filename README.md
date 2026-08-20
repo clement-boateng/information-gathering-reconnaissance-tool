@@ -96,3 +96,8 @@ Enter number(s), separated by comma (e.g. 1,3,5), or 0 to run every module. Only
 ●       The email finder only detects addresses published as plain text in a page's HTML. Addresses shown as images, assembled by JavaScript after the page loads, or hidden behind a contact form are not detected.
 
 ●       WHOIS results vary by domain, since many registrars mask contact details behind privacy protection.
+
+
+## **Report**
+
+[View the Report](Docs/InfoGather_Project_Report.pdf)
