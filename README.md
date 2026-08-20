@@ -36,9 +36,8 @@ The user decides to run all tools or select exactly which ones they want to run 
 
 # **Installation**
 
-1. Clone the repository:
-
-git clone https://github.com/<your-username>/infogather-tool.git cd infogather-tool
+1. Clone the repository: git clone https://github.com/clement-boateng/reconnaissance-automation-tool.git
+cd reconnaissance-automation-tool
 
 2. Create a virtual environment: python3 -m venv venv
 
