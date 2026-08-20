@@ -2,7 +2,7 @@
 
 *A modular Python reconnaissance automation tool*
 
- **Overview**
+# **Overview**
 
 InfoGather is a command-line reconnaissance tool built in Python. It accepts a domain name or an IP address as the target then gathers publicly available information from a single run rather than running several separate tools one after the order.
 
@@ -40,26 +40,21 @@ The user decides to run all tools or select exactly which ones they want to run 
 
 git clone https://github.com/<your-username>/infogather-tool.git cd infogather-tool
 
-2. Create a virtual environment:
+2. Create a virtual environment: python3 -m venv venv
 
-python3 -m venv venv
+3. Activate the virtual environment: source venv/bin/activate
 
-3. Activate the virtual environment:
-
-source venv/bin/activate
-
-4. Install the required packages:
-
-pip install -r requirements.txt
+4. Install the required packages: pip install -r requirements.txt
 
 # **Usage**
 
 Run the tool from the project's root folder:
 
-# Linux / macOS (sudo required for the ping module) sudo venv/bin/python3 recon.py
+# Linux (sudo venv/bin/python3 recon.py)
 
 You'll be prompted for a target, then shown a menu of available modules:
 
+```bash
 Enter target (domain or IP): example.com
 
 Select modules to run:
@@ -75,6 +70,7 @@ Select modules to run:
 [5] Website Technology Detection
 
 [0] All Enter numbers (separated by comma) or 0 for all:
+```
 
 Enter number(s), separated by comma (e.g. 1,3,5), or 0 to run every module. Only the modules selected will run. Once finished, results are saved automatically to recon_report_<target>.txt in the project folder.
 
