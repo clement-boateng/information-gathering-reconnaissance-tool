@@ -75,8 +75,7 @@ Select modules to run:
 Enter number(s), separated by comma (e.g. 1,3,5), or 0 to run every module. Only the modules selected will run. Once finished, results are saved automatically to recon_report_<target>.txt in the project folder.
 
 # **Project Structure**
-
-#
+![flow diagram](Docs/images/flow-diagram.png)
 
 # **How Each Module Works**
 
