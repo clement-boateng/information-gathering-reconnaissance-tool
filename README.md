@@ -36,14 +36,14 @@ The user decides to run all tools or select exactly which ones they want to run 
 
 # **Installation**
 
-1. Clone the repository: git clone https://github.com/clement-boateng/reconnaissance-automation-tool.git
-cd reconnaissance-automation-tool
+1. Clone the repository: git clone https://github.com/clement-boateng/information-gathering-reconnaissance-tool.git
+cd information-gathering-reconnaissance-tool
 
-2. Create a virtual environment: python3 -m venv venv
+3. Create a virtual environment: python3 -m venv venv
 
-3. Activate the virtual environment: source venv/bin/activate
+4. Activate the virtual environment: source venv/bin/activate
 
-4. Install the required packages: pip install -r requirements.txt
+5. Install the required packages: pip install -r requirements.txt
 
 # **Usage**
 
