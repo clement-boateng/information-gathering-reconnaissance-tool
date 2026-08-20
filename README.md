@@ -2,7 +2,7 @@
 
 *A modular Python reconnaissance automation tool*
 
-# **Overview**
+ **Overview**
 
 InfoGather is a command-line reconnaissance tool built in Python. It accepts a domain name or an IP address as the target then gathers publicly available information from a single run rather than running several separate tools one after the order.
 
