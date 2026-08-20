@@ -2,13 +2,13 @@
 
 *A modular Python reconnaissance automation tool*
 
-## **Overview**
+# **Overview**
 
 InfoGather is a command-line reconnaissance tool built in Python. It accepts a domain name or an IP address as the target then gathers publicly available information from a single run rather than running several separate tools one after the order.
 
 The user decides to run all tools or select exactly which ones they want to run from a simple menu.
 
-## **Features**
+# **Features**
 
 ●       Domain ownership lookup (WHOIS)
 
@@ -23,6 +23,8 @@ The user decides to run all tools or select exactly which ones they want to run 
 ●       Menu-driven module selection (user can decide to run all / selected modules)
 
 ●       Automatic, timestamped, saved text report for every run
+
+●       No paid APIs or API keys required
 
 # **Requirements**
 
@@ -76,6 +78,26 @@ Select modules to run:
 
 Enter number(s), separated by comma (e.g. 1,3,5), or 0 to run every module. Only the modules selected will run. Once finished, results are saved automatically to recon_report_<target>.txt in the project folder.
 
-## **Project Structure**
+# **Project Structure**
 
-●       No paid APIs or API keys required
+#
+
+# **How Each Module Works**
+
+●       whois_lookup.py: Queries WHOIS servers directly to retrieve domain registration details (registrar, creation/expiry dates, name servers).
+
+●       dns_lookup.py: Resolves A, MX, NS, and TXT DNS records for the target.
+
+●       ping_check.py:  Sends a single ping and measures round-trip response time in milliseconds.
+
+●       tech_detect.py: Sends an HTTP request and reads the Server and X-Powered-By response headers to identify the web technology in use.
+
+●       email_harvest.py: Fetches the target's homepage and common inner pages (/contact, /about, /team) and searches the raw HTML for publicly published email addresses belonging to the target's domain.
+
+●       report.py: Collects the results from every module that ran and writes them into a single, timestamped, saved text report.
+
+# **Limitations**
+
+●       The email finder only detects addresses published as plain text in a page's HTML. Addresses shown as images, assembled by JavaScript after the page loads, or hidden behind a contact form are not detected.
+
+●       WHOIS results vary by domain, since many registrars mask contact details behind privacy protection.
